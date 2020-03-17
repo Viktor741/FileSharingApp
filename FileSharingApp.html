@@ -1,0 +1,134 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--                                                               -->
+<!-- Consider inlining CSS to reduce the number of requested files -->
+<!--                                                               -->
+<link type="text/css" rel="stylesheet" href="FileSharingApp.css">
+
+<!--                                           -->
+<!-- Any title is fine                         -->
+<!--                                           -->
+<title>File Sharing Application</title>
+
+<!--                                           -->
+<!-- This script loads your compiled module.   -->
+<!-- If you add any GWT meta tags, they must   -->
+<!-- be added before this line.                -->
+<!--                                           -->
+<script type="text/javascript" language="javascript"
+	src="filesharingapp/filesharingapp.nocache.js"></script>
+</head>
+
+<!--                                           -->
+<!-- The body can have arbitrary html, or      -->
+<!-- you can leave the body empty if you want  -->
+<!-- to create a completely dynamic UI.        -->
+<!--                                           -->
+<body>
+
+	<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+	<noscript>
+		<div
+			style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+			Your web browser must have JavaScript enabled in order for this
+			application to display correctly.</div>
+	</noscript>
+
+	<h1>File Sharing Application</h1>
+	<div id="loginStatus">
+	
+	</div>
+	<div class="topnav">
+		<a id="homeLink" href="javascript:void(0);" class="tab-link active">Home</a> 
+		<a id="loginLink" href="javascript:void(0);" class="tab-link">Login</a> 
+		<a id="uploadFilesLink" href="javascript:void(0);" class="tab-link">Upload Files</a> 
+		<a id="shareFilesLink" href="javascript:void(0);" class="tab-link">Share Files</a>
+		<a id="downloadFilesLink" href="javascript:void(0);" class="tab-link">Download Files</a>
+	</div>
+
+	<div id="homeContainer" class="tab-container">
+		<h2>This is the home page</h2>
+		<p>
+			We can describe here what the application is for ...
+		</p>
+
+	</div>
+
+	<div id="loginContainer" class="tab-container">
+		<h2>Login with your user name and password</h2>
+		<p>
+			This is where the user will be able to login with their user name and password
+		</p>
+		
+	</div>
+
+	<div id="uploadFilesContainer" class="tab-container">
+		<h2>Upload your files</h2>
+		<div class="anonymous-user">
+			<p>
+				Login first to be able to upload files
+			</p>
+		</div>
+		<div class="authenticated-user">
+			<p>
+				This is where the user will be able to upload their files
+			</p>
+			<div id="uploadFilesFormContainer">
+			<!-- 
+				Check sample code available at
+				http://www.gwtproject.org/javadoc/latest/com/google/gwt/user/client/ui/FileUpload.html
+		 	-->
+			</div>			
+		</div>		
+	</div>
+
+	<div id="shareFilesContainer" class="tab-container">
+		<h2>Share files with other users</h2>
+		<div class="anonymous-user">
+			<p>
+				Login first to be able to share your files with others
+			</p>
+		</div>
+		<div class="authenticated-user">
+			<p>
+				This is where you can share your files with specific users or make them public
+			</p>
+			<h3>Your files</h3>
+			<div id="yourFilesToShare">
+			</div>			
+		</div>	
+	</div>
+	
+	<div id="downloadFilesContainer" class="tab-container">
+		<h2>Download files</h2>
+		<div class="anonymous-user">
+			<p>
+				Login first to be able to download files
+			</p>
+		</div>
+		<div class="authenticated-user">
+			<p>
+				This is where you can download your files or files shared with you
+			</p>
+			<h3>Your files</h3>
+			<div id="yourFilesToDownload">
+			</div>		
+			<h3>Shared files</h3>
+			<div id="sharedFilesToDownload">
+			</div>		
+			<h3>Public files</h3>
+			<div id="publicFilesToDownload">
+			</div>		
+		</div>
+	</div>
+
+</body>
+</html>
