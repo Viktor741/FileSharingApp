@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.fileSharingApp.client.AuthenticationService
+path: 8F481CAEE2B0924B98F7359A3E20E32F.gwt.rpc

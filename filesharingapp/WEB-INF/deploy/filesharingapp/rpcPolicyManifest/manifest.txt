@@ -1,0 +1,3 @@
+# Module filesharingapp
+# RPC service class, partial path of RPC policy file
+com.google.gwt.fileSharingApp.client.AuthenticationService, 8F481CAEE2B0924B98F7359A3E20E32F.gwt.rpc
